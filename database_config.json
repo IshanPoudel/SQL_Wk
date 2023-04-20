@@ -1,0 +1,8 @@
+
+{
+    "host" : "localhost" , 
+    "user" : "root" , 
+    "password" : "rootroot",
+    "filepath" : "general_sample_file.txt"
+  }
+  
