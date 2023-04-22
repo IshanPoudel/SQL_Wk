@@ -1,0 +1,8 @@
+
+{
+    "host" : "idir-server10" , 
+    "user" : "root" , 
+    "password" : "root",
+    "filepath" : "general_sample_file.txt"
+  }
+  

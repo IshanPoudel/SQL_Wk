@@ -37,7 +37,7 @@ db.commit()
 start_time = time.time()
 
 
-mycursor.execute("""LOAD DATA  INFILE '/Users/user/Desktop/Wikidata_Refactored/Wikipedia_Refactored_pure_sql/small_sample.txt' INTO TABLE master_table FIELDS TERMINATED BY '>' LINES TERMINATED BY '\n' (@subject, @predicate, @object)
+mycursor.execute("""LOAD DATA  LOCAL INFILE '/general_sample.txt' INTO TABLE master_table FIELDS TERMINATED BY '>' LINES TERMINATED BY '\n' (@subject, @predicate, @object)
 SET subject = TRIM(BOTH '<' FROM SUBSTRING_INDEX(@subject, '<', -1)),predicate = SUBSTRING_INDEX(@predicate, '<', -1),object = CASE WHEN @object LIKE '<%' THEN CONCAT('<', SUBSTRING_INDEX(@object, '>', 1), '>') ELSE @object END""")
                  
 
