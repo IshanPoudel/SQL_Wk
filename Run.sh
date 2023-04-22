@@ -1,4 +1,4 @@
-python3 Server_store_in_sql.py
+python3 Store_in_sql_with_readfile.py
 python3 Initialize_db.py
 python3 statement.py
 python3 direct_truth.py
